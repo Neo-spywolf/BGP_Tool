@@ -48,3 +48,67 @@ Run all tests using:
 
 ```bash
 PYTHONPATH=src pytest test/
+
+Sample output:
+======================== test session starts =========================
+...
+test/test_feature_engineer.py ....                             [ 57%]
+test/test_fetcher.py ..                                        [ 85%]
+test/test_live_detector.py .                                   [100%]
+========================= 7 passed in X.XXs =========================
+🛠️ Installation
+git clone https://github.com/Neo-spywolf/BGP_Tool.git
+cd BGP_Tool
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+▶️ Running the Tool
+This project is modular. You can plug in your own live feed or use the test harness:
+
+python src/main.py
+
+📁 Project Structure
+bgp_intel_tool/
+├── src/
+│   ├── ml/
+│   │   ├── feature_engineer.py
+│   │   ├── live_detector.py
+│   ├── fetcher.py
+│   └── ...
+├── test/
+│   ├── test_feature_engineer.py
+│   ├── test_live_detector.py
+│   └── test_fetcher.py
+├── requirements.txt
+└── README.md
+🤖 Machine Learning
+Trained on synthetic and real-world BGP features
+
+Can be replaced or retrained using your own dataset
+
+Predicts anomalies like:
+
+Suspicious AS path lengths
+
+Rare origin ASNs
+
+Unexpected subprefixes
+
+🔒 Security Use Cases
+Detect route hijacks
+
+Spot subprefix takeovers
+
+Monitor for BGP leaks and blackhole attempts
+
+Integrate into alerting or mitigation pipelines
+
+📜 License
+MIT License
+You are free to use, modify, and distribute this tool.
+
+🙋‍♂️ Author
+Ben (@Neo-spywolf)
+Built with ❤️ to make BGP more secure.
