@@ -1,0 +1,9 @@
+requests
+matplotlib
+networkx
+pyyaml
+scikit-learn
+joblib
+pandas
+numpy
+websocket-client

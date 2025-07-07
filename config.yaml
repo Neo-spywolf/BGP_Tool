@@ -1,0 +1,8 @@
+prefixes_to_monitor:
+  - 8.8.8.0/24
+  - 1.1.1.0/24
+
+asns_to_monitor:
+  - 15169
+  - 13335
+
